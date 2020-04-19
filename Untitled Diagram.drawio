@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-04-19T03:07:45.856Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36" etag="QYiW_CqaoEDEswXAxHDV" version="12.9.14" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-04-19T03:30:06.711Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36" etag="aSRZc725RhROFpefViZc" version="12.9.14" type="github" pages="3">
   <diagram id="39rPOnSlwX92gIzZ3qOB" name="サインアップ/サインイン">
-    <mxGraphModel dx="2947" dy="2855" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3795" dy="3529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -76,11 +76,14 @@
         <mxCell id="4mcJYZFnsMWWn07E_agx-12" value="登録/ログインボタン" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=50;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry y="260" width="470" height="70" as="geometry" />
         </mxCell>
+        <mxCell id="DAR_gLw_47h9-UadnWop-1" value="ホーム画面へ遷移" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=50;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="610" y="260" width="410" height="70" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="IIwOQJ6h4t9KCh2GYUef" name="ホーム">
-    <mxGraphModel dx="1484" dy="1180" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2120" dy="1686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="hi2ekjQ5ZYYY5NshkkUh-0" />
         <mxCell id="hi2ekjQ5ZYYY5NshkkUh-1" parent="hi2ekjQ5ZYYY5NshkkUh-0" />
@@ -147,11 +150,26 @@
         <mxCell id="GZItYmW2dU40OuQ48PGp-5" value="この昨日は未実装" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=50;fontColor=#000000;" vertex="1" parent="hi2ekjQ5ZYYY5NshkkUh-1">
           <mxGeometry x="920" y="1479" width="420" height="70" as="geometry" />
         </mxCell>
+        <mxCell id="Qs6BBXl8Z5m1eNqrqAKN-1" value="⑤" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=50;fontColor=#FF0000;fontStyle=1;labelBackgroundColor=#99FFFF;" vertex="1" parent="hi2ekjQ5ZYYY5NshkkUh-1">
+          <mxGeometry x="329.5" y="1590" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs6BBXl8Z5m1eNqrqAKN-2" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;strokeColor=#FF3333;strokeWidth=5;fillColor=none;fontSize=50;fontColor=#000000;" vertex="1" parent="hi2ekjQ5ZYYY5NshkkUh-1">
+          <mxGeometry x="1241" y="210" width="110" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs6BBXl8Z5m1eNqrqAKN-3" value="⑤" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=50;fontColor=#FF0000;fontStyle=1;labelBackgroundColor=#99FFFF;" vertex="1" parent="hi2ekjQ5ZYYY5NshkkUh-1">
+          <mxGeometry x="1220" y="200" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs6BBXl8Z5m1eNqrqAKN-4" value="ログアウトボタン" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=50;fontColor=#000000;" vertex="1" parent="hi2ekjQ5ZYYY5NshkkUh-1">
+          <mxGeometry x="440" y="1606" width="420" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Qs6BBXl8Z5m1eNqrqAKN-5" value="サインアップ/サインイン画面に遷移" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=50;fontColor=#000000;" vertex="1" parent="hi2ekjQ5ZYYY5NshkkUh-1">
+          <mxGeometry x="920" y="1606" width="820" height="70" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="MxwIXjbJ0LU2HH7PVIlC" name="入力画面">
-    <mxGraphModel dx="1855" dy="1475" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2968" dy="2360" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="eI_IlYo4YzzW0mIO8BJH-0" />
         <mxCell id="eI_IlYo4YzzW0mIO8BJH-1" parent="eI_IlYo4YzzW0mIO8BJH-0" />
