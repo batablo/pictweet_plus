@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+/Users/matsudadaiki/Desktop/work/obata/kakeibo/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+548908893.index
