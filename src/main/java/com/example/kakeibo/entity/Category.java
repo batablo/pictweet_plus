@@ -11,19 +11,18 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
+@Getter
+@Setter
 @Table(name="category")
 public class Category {
 
-	@Getter
-	@Setter
+	
 	@Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name = "category_id")
 	/* id */
 	private int categryId;
-	
-	@Getter
-	@Setter
+
 	@Column(name = "category_name")
 	/* ユーザー名 */
 	private String categryName;

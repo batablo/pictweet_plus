@@ -1,8 +1,14 @@
 package com.example.kakeibo.form;
 
+import java.util.List;
+
+import com.example.kakeibo.dto.CategoryDto;
+
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
+@Data
 public class MoneyForm {
 
 	/* 品目名 */
@@ -10,15 +16,10 @@ public class MoneyForm {
 	@Setter
 	private String ItemName;
 	
-	/* カテゴリID */
+	/* カテゴリDTO */
 	@Getter
 	@Setter
-	private String categoryId;
-	
-	/* カテゴリ名 */
-	@Getter
-	@Setter
-	private String categoryName;
+	private List<CategoryDto> dto;
 	
 	/* 金額 */
 	@Getter
