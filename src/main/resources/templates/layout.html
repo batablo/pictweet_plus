@@ -6,20 +6,40 @@
 	<title th:text="${title}">各ページタイトル</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<th:block th:replace="${links} ?: _" />
     <th:block th:replace="${scripts} ?: _" />
 </head>
 <body>
 	<header th:fragment="header">
-		<nav class="navbar navbar-light bg-light" style="height: 96px;">
+		<nav class="navbar navbar-light bg-light" style="maragin: 0; padding: 0; height: 108px; width: 100%; padding-left: 30px; justify-content: start;">
 		  <div class="navbar-header">
-	  		<a class="navbar-brand" href="#!"><img alt="Zaim" height="48" width="160" class="logo-default" src="//zaim-assets.s3-ap-northeast-1.amazonaws.com/assets/common/zaim.logo-611548ef40247b33e3d17e7aa71351450fa001d566499a26c71bb9b1d0524f3f.svg"></a>
+	  		<a class="navbar-brand" href="#!">
+	  		<img alt="Zaim" height="48" width="160" class="logo-default" src="//zaim-assets.s3-ap-northeast-1.amazonaws.com/assets/common/zaim.logo-611548ef40247b33e3d17e7aa71351450fa001d566499a26c71bb9b1d0524f3f.svg"></a>
 		  </div>
-		  <form id="money-form" th:action="@{/}" method="post">
-		  <button type="button" class="btn btn-success actionBtn d-flex justify-content-start" th:data-action="@{/money/new}">家計簿を入力</button>
-		  </form>
+		  <div style="padding-right: 20px;">
+		    <form id="money-form" th:action="@{/}" method="post">
+		      <button type="button" class="btn btn-success actionBtn d-flex justify-content-start" th:data-action="@{/money/new}" style="width: 165px; padding-left: 35px;">家計簿を入力</button>
+		    </form>
+		  </div>
+		  <div style="height:108px; width: 124px; padding: 15px; text-align: center; border-left: dotted 0.3px gray;">
+		    <form id="form1" th:action="@{/}" method="post">
+		      <div class="material-icons" style="color:#666; width: 94px; font-size: 36px; padding-top: 10px;">library_books</div>
+		      <span>
+		        <button type="button" class="btn" th:data-action="@{/}" style="color:#666; font-size:12px; font-weight: bold;">履歴</button>
+		      </span>
+		    </form>
+		  </div>
+		  <div style="height:108px; width: 124px; padding: 15px; text-align: center; border-left: dotted 0.3px gray; border-right: dotted 0.5px gray;">
+		    <form id="form2" th:action="@{/}" method="post">
+		      <div class="material-icons" style="color:#666; width: 94px; font-size: 36px; padding-top: 10px;">assessment</div>
+		      <div>
+		        <button type="button" class="btn" th:data-action="@{/}" style="color:#666; font-size:12px; font-weight: bold;">分析</button>
+		      </div>
+		    </form>
+		  </div>
 		</nav>
-		<script>
+    <script>
 	window.MyLib = {};
 	// サブミット
 	MyLib.submit = function (formId) {
