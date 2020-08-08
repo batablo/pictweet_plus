@@ -49,20 +49,22 @@
 									<div>
 										<div class="flexWrapper">
 											<div class="item">
-												<input class="itemInput" name="item_name" type="text" value="">
+												<input class="itemInput" type="text" th:field="*{itemName}">
 											</div>
 											<div class="select item">
 												<div>
-													<input class="itemInput" name="item_name" type="text" value="">
+												<select class="itemInput" th:field=*{categoryId}>
+												    <option th:each="category : ${categoryList}" th:value="${category.id}" th:selected="${category.id == id}" th:inline="text">[[${category.name}]]</option>
+												</select>
 												</div>
 											</div>
 											<div class="item">
 												<div>
-													<input class="itemInput" name="item_name" type="text" value="">
+													<input class="itemInput" type="text" th:field="*{price}">
 												</div>
 											</div>
 											<div class="item">
-												<input class="itemInput" name="item_name" type="text" value="">
+												<input class="itemInput" type="text" th:field="*{memo}">
 											</div>
 										</div>
 									</div>
@@ -93,7 +95,7 @@
 												<div class="value">
 													<div>
 														<input class="wrapper defaultInput" type="text" name="date"
-														value="2020年〇〇月〇〇日" style="font-size: 14px;">
+														value="" style="font-size: 14px;">
 													</div>
 												</div>
 											</div>
@@ -119,6 +121,15 @@
 				</div>
 			</div>
 		</div>
-	<script type="text/javascript"></script>
+	<script type="text/javascript">
+	　　$(function() {
+		  //テキストボックスのフォーカスが外れたら発動
+		  $('#price').blur(function() {
+		    //背景色を白にするprice
+		    var price = $(this).val();
+		    $('.total').text("¥" + price);
+		  });
+		});
+	</script>
 	</body>
 </html>

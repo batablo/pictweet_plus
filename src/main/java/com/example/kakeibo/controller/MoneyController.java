@@ -22,6 +22,7 @@ public class MoneyController {
 	@RequestMapping(value="/new",method = RequestMethod.POST)
 	public String newIndex(MoneyForm form, Model model) {
 		List<Category> categoryList = moneyService.getCategory();
+		model.addAttribute("categoryList", categoryList);
 		return "newcreate";
 	}
 	
@@ -29,6 +30,12 @@ public class MoneyController {
 	public String insert(MoneyForm form, Model model) {
 		
 		model.addAttribute("insertFlag",true);
+		form.setCategoryId("");
+		form.setDate("");
+		form.setItemName("");
+		form.setMemo("");
+		form.setPrice("");
+		form.setStoreName("");
 		return newIndex(form, model);
 	}
 }
